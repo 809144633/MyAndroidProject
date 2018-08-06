@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rv1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/back"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal|center"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal|center"
+                android:text="校园任务"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C0C0C0"
+             />
+            <ListView
+                android:id="@+id/list2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/LL"
+                android:layout_below="@+id/view3">
+            </ListView>
+            <LinearLayout
+                android:id="@+id/LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom">
+                <Button
+                    android:id="@+id/btn_index"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="bottom|center"
+                    android:textSize="15sp"
+                    android:drawableTop="@mipmap/index"
+                    android:scaleType="fitXY"
+                    android:text="首页"
+                    android:background="@drawable/bottom_bar"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:id="@+id/btn_add"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:drawableTop="@mipmap/index"
+                    android:scaleType="fitXY"
+                    android:background="@color/transparent"
+                    android:src="@mipmap/a" />
+
+                <Button
+                    android:id="@+id/personal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="bottom|center"
+                    android:textSize="15sp"
+                    android:drawableTop="@mipmap/personal"
+                    android:text="个人"
+                    android:background="@drawable/bottom_bar"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+        </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="#FAFBFD"
+                android:gravity="center"
+                android:text="发布"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/cancle"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:text="@string/cancle"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/cancle"
+                android:background="#FAFBFD" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/task_title"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:background="#FAFBFD" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/task_content"
+            android:inputType="textMultiLine" />
+        <TextView
+            android:id="@+id/block1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#F3F5F9"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="佣金" />
+
+            <TextView
+                android:id="@+id/RMB_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/price"
+                android:layout_toRightOf="@+id/price"
+                android:gravity="bottom|center"
+                android:textSize="25sp"
+                android:text="¥" />
+            <EditText
+                android:id="@+id/edit_price"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/RMB_icon"
+                android:layout_toRightOf="@+id/RMB_icon"
+                android:inputType="numberDecimal"/>
+            <View
+                android:id="@+id/v"
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:background="@color/linen"
+                android:layout_toEndOf="@+id/edit_price"
+                android:layout_toRightOf="@+id/edit_price"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/v"
+                android:layout_toRightOf="@+id/v"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="分类："
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/sort"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/text"
+                android:layout_alignBottom="@+id/text"
+                android:layout_toEndOf="@+id/text"
+                android:layout_toRightOf="@+id/text"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/sort"
+                android:layout_alignBottom="@+id/sort"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dp"
+                android:textSize="30sp"
+                android:text="@string/右指向"
+                android:id="@+id/textView13" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/sort"
+                android:background="@color/linen" />
+            <TextView
+                android:id="@+id/connection"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center|left"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sort"
+                android:background="@color/transparent"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="联系方式" />
+
+            <EditText
+                android:id="@+id/edit_connection"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/connection"
+                android:layout_toEndOf="@+id/connection"
+                android:layout_toRightOf="@+id/connection"
+                android:background="@null"
+                android:inputType="phone" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/edit_connection"
+                android:background="@color/linen" />
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:gravity="center|left"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/connection"
+                android:background="@color/transparent"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="收货地址(选填)" />
+
+            <EditText
+                android:id="@+id/edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/address"
+                android:layout_toEndOf="@+id/address"
+                android:layout_toRightOf="@+id/address"
+                android:background="@null"
+                android:gravity="center|left"
+                android:inputType="text" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/edit_address"
+                android:background="@color/linen"
+                android:id="@+id/textView2" />
+            <Button
+                android:id="@+id/release"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape"
+                android:layout_below="@id/textView2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="确定发布"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

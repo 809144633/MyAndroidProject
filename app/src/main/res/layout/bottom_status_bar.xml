@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+        <Button
+            android:id="@+id/btn_firstpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="首页"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp" />
+
+        <ImageButton
+            android:id="@+id/btn_dd"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:background="@color/transparent"
+            android:src="@drawable/a"/>
+
+
+        <Button
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="个人"
+            android:textSize="20dp"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

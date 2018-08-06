@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyAndroidProject</string>
+    <string name="版权">Powered By FYW</string>
+    <string name="右指向">></string>
+    <string name="cancle">×</string>
+    <string name="task_title">标题 任务类型等简要说明</string>
+    <string name="task_content">任务的详细说明</string>
+    <string name="product_title">标题 商品类型等简要说明</string>
+    <string name="product_content">商品的详细说明</string>
+    <string name="取消">取消</string>
+    <string name="确定">确定</string>
+</resources>

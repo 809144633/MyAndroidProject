@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/baseline"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/whitesmoke"
+            android:gravity="start|bottom"
+            android:text="基本信息"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/button_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/baseline"
+            android:background="@color/transparent"
+            android:gravity="start|center"
+            android:text="昵称"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"
+            android:text="TB_17757583581" />
+
+        <View
+            android:id="@+id/block7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/button_name"
+            android:background="#33000000" />
+
+        <Button
+            android:id="@+id/button_publish"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button_name"
+            android:background="@color/transparent"
+            android:gravity="start|center"
+            android:text="头像"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <View
+            android:id="@+id/block2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/button_publish"
+            android:background="#33000000" />
+
+        <Button
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/block2"
+            android:background="@color/transparent"
+            android:gravity="start|center"
+            android:text="性别"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:text="女"
+            android:textSize="20sp" />
+        <View
+            android:id="@+id/block3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/sex"
+            android:background="#33000000" />
+
+        <Button
+            android:id="@+id/birth"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sex"
+            android:background="@color/transparent"
+            android:gravity="start|center"
+            android:text="生日"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignLeft="@+id/textView_sex"
+            android:layout_alignStart="@+id/textView_sex"
+            android:text="1997-06-04"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/block4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/birth"
+            android:background="#33000000" />
+
+        <Button
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/block4"
+            android:background="@color/transparent"
+            android:gravity="start|center"
+            android:text="联系方式"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_alignLeft="@+id/textView_birth"
+            android:layout_alignStart="@+id/textView_birth"
+            android:text="17757583581"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/block5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/phone_number"
+            android:background="#33000000" />
+
+        <Button
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/block5"
+            android:background="@color/transparent"
+            android:gravity="start|center"
+            android:text="收货地址"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_alignLeft="@+id/textView_phone"
+            android:layout_alignStart="@+id/textView_phone"
+            android:text="寝室2505"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/block6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/address"
+            android:background="#33000000" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/block2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="@string/右指向"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/block3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_marginBottom="13dp"
+            android:text="@string/右指向"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/block4"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_marginBottom="13dp"
+            android:text="@string/右指向"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/block5"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_marginBottom="13dp"
+            android:text="@string/右指向"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/address"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_marginBottom="13dp"
+            android:text="@string/右指向"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

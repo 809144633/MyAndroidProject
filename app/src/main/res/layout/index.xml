@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.youth.banner.Banner
+    android:id="@+id/banner"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"/>
+    <LinearLayout
+    android:id="@+id/line2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+    android:id="@+id/btn1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:background="@drawable/btnround_style"
+    android:text="校园任务"
+    android:layout_weight="1"
+    android:gravity="center"/>
+    <Button
+    android:id="@+id/btn2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:background="@drawable/btnround_style"
+    android:layout_toRightOf="@id/btn1"
+    android:text="二手交易"
+    android:layout_weight="1"
+    android:gravity="center"/>
+    </LinearLayout>
+    <View
+    android:id="@+id/view1"
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="#C0C0C0" />
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="最新任务"
+    android:textSize="18dp"
+    android:gravity="left|center_vertical"
+    android:layout_marginLeft="10dp"/>
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#C0C0C0" />
+    <RelativeLayout
+    android:id="@id/line3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/list1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>
