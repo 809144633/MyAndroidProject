@@ -67,7 +67,7 @@ public class tasklist extends Activity {
         btn_user=findViewById(R.id.personal);
         list1=findViewById(R.id.list2);
         mContext=this;
-        li1=new ArrayList<Map<String, Object>>();
+        li1=new ArrayList<>();
         list1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -85,14 +85,6 @@ public class tasklist extends Activity {
         btback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-            }
-        });
-        btfirst.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(mContext,MainActivity.class);
-                startActivity(intent);
                 finish();
             }
         });
@@ -156,7 +148,6 @@ public class tasklist extends Activity {
             try {
                 sqlCon(con);    //测试数据库连接
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
                 Log.i("Publish_task", "连接失败" + e.getMessage() + "");
             }
@@ -170,8 +161,8 @@ public class tasklist extends Activity {
                 System.out.print("连接成功");
                 Statement sta = con.createStatement(); // 创建语句对象
                 String sql="select * from task WHERE flag=0 and destroy_time is NULL ORDER BY create_time DESC ";
-                if (con!=null&&!con.isClosed()){
-                    ps= (PreparedStatement) con.prepareStatement(sql);
+                if (!con.isClosed()){
+                    ps=con.prepareStatement(sql);
                     if(ps!=null){
                         rs=ps.executeQuery();
                         if (rs!=null){
@@ -194,7 +185,7 @@ public class tasklist extends Activity {
                                 String real_time = sdf.format(new Date(Long.parseLong(time)));
                                 int id=task.getId();
                                 int Price=task.getPrice();
-                                Map<String,Object> itemData = new HashMap<String,Object>();
+                                Map<String,Object> itemData = new HashMap<>();
                                 itemData.put("title",Itemtitle);
                                 itemData.put("content",ItemContent);
                                 itemData.put("sort",Sort);
